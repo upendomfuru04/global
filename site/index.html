@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link data-optimized="1" rel="stylesheet" href="https://multiwebpress.com/wp-content/litespeed/css/6a6a912d0c7b55b537768da778032849.css?ver=32849"/>
+    <title> upendomyfair</title>
+</head>
+<style>
+	*{
+    margin:0; padding:0;
+    font-family: sans-serif;
+    
+    
+}
+
+body{
+    overflow: hidden;
+
+}
+
+nav{
+    height: 4rem;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    z-index: 6;
+    background: white;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.2);
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+
+
+.logo img{
+    width: 6rem;
+}
+
+
+.nav-links{
+    width: 80vw;
+    display: flex;
+    padding: 0 12vw;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    list-style: none;
+    font-weight: 600;
+
+}
+
+.nav-links li a{
+    margin: 0 0vw;
+    text-decoration: none;
+    transition: all ease-in-out 350ms;
+    padding: 4px;
+    color: #fe6600;
+}
+
+.nav-links li a:hover{
+    color: #fe6600;
+    padding: 10px;
+}
+
+.nav-links li{
+    position:relative;
+}
+
+.nav-links li a:hover::before{
+    width: 80%;
+}
+
+
+
+.login-button{
+    padding: 0.6rem 0.8rem;
+    margin-left: 2vw;
+    font-size:1rem;
+    cursor:pointer;
+    background-color: transparent;
+    border:1.5px solid #072f5f;
+    border-radius: 2em;
+    color:#fe6600;
+}
+
+.login-button:hover{
+    
+    background-color:;
+    border:1.5px solid #fe6600;
+    transition: all ease-in-out 350ms;
+}
+
+
+.hamburger div{
+    width: 30px;
+    height: 3px;
+    background: #fe6600;
+    margin: 5px;
+    transition: all 0.3s ease;
+
+}
+
+.hamburger{
+    display: none;
+}
+
+
+.img{
+  background: url('toto 1.jpg')no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.img::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.center{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.center .title{
+  color: #072f5f;
+  font-size: 55px;
+  font-weight: 600;
+}
+
+
+
+
+@media screen and (max-width: 800px){
+    nav{
+        position: fixed;
+        z-index: 3;
+    }
+    .hamburger{
+        display:block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+        color: #fe6600;
+
+        
+    }
+    .nav-links{
+        background: #3895d3;
+        position: fixed;
+        opacity: 1;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.7s;
+    }
+    .nav-links li:nth-child(5){
+        transition: all 0.5s ease 0.8s;
+    }
+    .nav-links li:nth-child(6){
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+    .nav-links li:nth-child(7){
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+
+    li.fade{
+        opacity: 1;
+    }
+
+
+        .toggle .bars1{
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        .toggle .bars2{
+            transition: all 0s ease;
+            width: 0;
+        }
+
+        .toggle .bars3{
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+
+}
+</style>
+<body>
+    <nav>
+        <div class="logo">
+            <img data-lazyloaded="1" src="global.png">
+        </div>
+        <div class="hamburger">
+            <div class="bars1"></div>
+            <div class="bars2"></div>
+            <div class="bars3"></div>
+        </div>
+        <ul class="nav-links">
+           <li><a href="#">Home</a></li>
+			<li><a href="#">Choose Totors</a></li>
+			<li><a href="#">Group Classes</a></li>
+			<li><a href="#">Courses</a></li>
+			 <li><button class="login-button" href="#">Sign Up</button></li>
+            <li><button class="login-button" href="#">Log In</button></li>
+        </ul>
+    </nav>
+    <div class="img"></div>
+  <div class="center">
+    <div class="title">Enrich,Explore,Discover</div>
+  </div>
+
+
+    <script>
+    	const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener('click', ()=>{
+      navLinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle("fade");
+    });
+
+    hamburger.classList.toggle("toggle");
+});
+    </script>
+</body>
+</html>
