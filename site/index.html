@@ -1,115 +1,90 @@
 <!DOCTYPE html>
-
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link data-optimized="1" rel="stylesheet" href="https://multiwebpress.com/wp-content/litespeed/css/6a6a912d0c7b55b537768da778032849.css?ver=32849"/>
-    <title> upendomyfair</title>
-     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Poppins" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-    crossorigin="anonymous">
-</head>
-<style>
-@import url("https://fonts.googleapis.com/css?family=poppins:200,300,400,500,600,700,800,900")
-
-	*{
-    margin:0;
-     padding:0;
-    font-family: sans-serif;
-    
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>global</title>
+  </head>
+  <style>
+    html {
+  scroll-behavior: smooth;
 }
 
-body{
-   min-height: 1000px; 
-
+/* CSS Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-nav{
-    width: 100vw;
-    display: flex;
-    position: sticky;
-    z-index: 10000;
-    letter-spacing: 1px;
-    font-weight: 300;
-    overflow: hidden;
-    top: 0;
-    left: 0;
+ul {
+  list-style-type: none;
 }
 
-
-p{
-    font-weight: 300;
-    color: #111;
+a {
+  text-decoration: none;
+  color: #fe6600;
 }
 
-html{
-    overflow-x:hidden;
-    scroll-behavior: smooth;
+a:hover {
+  color: #ff7235;
 }
 
-
-.logo img{
-    width: 8rem;
+body {
+  font-family: "roboto" ,sans-serif;
 }
 
-
-.nav-links{
-    width: 80vw;
-    display: flex;
-    padding: 0 12vw;
-    justify-content: space-evenly;
-    align-items: center;
-    text-transform: uppercase;
-    list-style: none;
-    font-weight: 600;
-
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3.5rem;
+  background-color: var(--bg-color);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-.nav-links li a{
-    margin: 0 0vw;
-    text-decoration: none;
-    transition: all ease-in-out 350ms;
-    padding: 4px;
-    color: #fe6600;
+nav img {
+  width:8rem ;
 }
 
-.nav-links li a:hover{
-    color: #fe6600;
-    padding: 10px;
+nav a {
+  color: #fe6600;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #ff7235;
+  border-bottom: 2px solid #ff7235;
 }
 
-.nav-links li{
-    position:relative;
+nav ul {
+  display: flex;
+  gap: 1.9rem;
 }
 
-.nav-links li a:hover::before{
-    width: 80%;
+nav ul li {
+  font-weight: 700;
 }
-
-
-
-.login-button{
-    padding: 0.6rem 0.8rem;
-    margin-left: 2vw;
-    font-size:1rem;
-    cursor:pointer;
-    background-color: transparent;
-    border:1.5px solid #072f5f;
-    border-radius: 2em;
-    color:#fe6600;
-}
-
-.login-button:hover{
-    
-    background-color:;
-    border:1.5px solid #fe6600;
-    transition: all ease-in-out 350ms;
-}
-
 
 .hamburger div{
     width: 30px;
@@ -123,6 +98,7 @@ html{
 .hamburger{
     display: none;
 }
+
 
 .banner{
     position: relative;
@@ -156,12 +132,12 @@ html{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap:2rem;
-    background: #fe6600;
+    gap:3rem;
+    background-color: #fe6600;
 }
 
 .about .image{
-    flex: 1 1 40rem;
+    flex: 1 1 30rem;
 }
 .about .image img{
     width: 50%;
@@ -181,6 +157,7 @@ html{
     color: white;
     font-size: 1.2rem;
 }
+
 
 .vision{
     display: flex;
@@ -207,21 +184,120 @@ html{
 
     padding: 0.1rem 0;
     line-height: 2;
-    color: white;
+    color: black;
     font-size: 1.2rem;
 }
 
 
-.btn{
-    display: inline-block;
-    background-color: white;
-    cursor: pointer;
-    color: black;
-    font-size: 20px;
-    padding: 0 2rem;
-    text-decoration: none;
+
+.ban{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(people.jpg);
+    background-size: cover;
+  }
+
+
+.bio {
+  width: 25rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px 2px #8b8eaf;
+  background-color: #fe6600;
+  color: white;
+  padding-left: 16px;
+}
+.bio h2 {
+  margin-bottom: 0.5rem;
+  font-size: 40px;
 }
 
+.bio p {
+  line-height: 1.7rem;
+  padding: 0.3rem 0;
+  font-size: 16px;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: none;
+  color: #fe6600;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button1 {
+  border-radius: 4px;
+  background-color: #fe6600;
+  border: none;
+  color:#ffffff ;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button1:hover span {
+  padding-right: 25px;
+}
+
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 
 @media screen and (max-width: 800px){
     nav{
@@ -241,7 +317,7 @@ html{
 
         
     }
-    .nav-links{
+    .navigation{
         background: #3895d3;
         position: fixed;
         opacity: 1;
@@ -253,34 +329,34 @@ html{
         transition: all 1s ease-out;
         pointer-events: none;
     }
-    .nav-links.open{
+    .navigation.open{
         clip-path: circle(1000px at 90% -10%);
         -webkit-clip-path: circle(1000px at 90% -10%);
         pointer-events: all;
     }
-    .nav-links li{
+    .navigation li{
         opacity: 0;
     }
-    .nav-links li:nth-child(1){
+    .navigation li:nth-child(1){
         transition: all 0.5s ease 0.2s;
     }
-    .nav-links li:nth-child(2){
+    .navigation li:nth-child(2){
         transition: all 0.5s ease 0.4s;
     }
-    .nav-links li:nth-child(3){
+    .navigation li:nth-child(3){
         transition: all 0.5s ease 0.6s;
     }
-    .nav-links li:nth-child(4){
+    .navigation li:nth-child(4){
         transition: all 0.5s ease 0.7s;
     }
-    .nav-links li:nth-child(5){
+    .navigation li:nth-child(5){
         transition: all 0.5s ease 0.8s;
     }
-    .nav-links li:nth-child(6){
+    .navigation li:nth-child(6){
         transition: all 0.5s ease 0.9s;
         margin: 0;
     }
-    .nav-links li:nth-child(7){
+    .navigation li:nth-child(7){
         transition: all 0.5s ease 1s;
         margin: 0;
     }
@@ -310,29 +386,26 @@ html{
 
 
 }
+  </style>
 
-</style>
-<body>
-    <nav>
-        <div class="logo">
-            <img data-lazyloaded="1" src="global.png">
-        </div>
-        <div class="hamburger">
+  <body>
+     <nav>
+      <img src="global.png">
+      <div class="hamburger">
             <div class="bars1"></div>
             <div class="bars2"></div>
             <div class="bars3"></div>
         </div>
-        <ul class="nav-links">
-           <li><a href="#">Home</a></li>
-			<li><a href="#">Choose Totors</a></li>
-			<li><a href="#">Group Classes</a></li>
-			<li><a href="#">Courses</a></li>
-			 <li><button class="login-button" href="#">Sign Up</button></li>
-            <li><button class="login-button" href="#">Log In</button></li>
-        </ul>
-    </nav>
+      <ul class="navigation">
+         <li><a href="#">Home</a></li>
+      <li><a href="#">Choose Totors</a></li>
+      <li><a href="#">Group Classes</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Signup</a></li>
+</nav>
 
-
+    <!-- Hero Section -->
 <section class="banner">
     <div class="content">
         <h2>Enrich,Explore,Discover</h2>
@@ -341,12 +414,13 @@ html{
 
 <section class="about" >
     <div class="image">
-    <img src="ic.png">
+    <img src="about.png">
 </div>
 <div class="content">
     <h3>ABOUT US</h3>
     <p>iGlobal Class is an education provider agent with global recognition and reputation.We provide help and assistance to student/learners in order to improve their acedemic excellence through e-learning and home teaching. We believe that education is a fundamental right and everyone should hane access to quality higher education and career development.</p>
-    <a href="#" class="btn">Read More</a>
+   <button class="button"><span>Read More </span></button>
+
 </div>
 </section>
 
@@ -355,30 +429,44 @@ html{
 <div class="content">
     <h3 style="color: #fe6600">OUR VISION</h3>
     <p>To make learning simple to the world.</p>
+    <button class="button1"><span>Learn More </span></button>
+
 </div>    
 
 <div class="image">
-    <img src="in.png">
+    <img src="vision.png">
 </div>
 </section>
 
 
+<section class="ban">
+    <div class="cont">
+        <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">Our Mission</h2>
+        <p class="bio-text">
+          To provide genuine education through the use of internet and technology for quality,fast,and best delivery services both e-learning and home teaching setup.
+        </p>
+      </div>
+    </div>
+</section>
 
 
 
-    <script>
-    	const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-const links = document.querySelectorAll(".nav-links li");
+<script>
 
-hamburger.addEventListener('click', ()=>{
-      navLinks.classList.toggle("open");
-    links.forEach(link => {
-        link.classList.toggle("fade");
-    });
 
-    hamburger.classList.toggle("toggle");
-});
-    </script>
-</body>
+</script>
+
+
+    <script src="assets/js/app.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
