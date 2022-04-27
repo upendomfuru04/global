@@ -1,104 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <title>global</title>
-  </head>
-  <style>
-    html {
+<head>
+  <title>global</title>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lato|Nanum+Gothic:700|Raleway&display=swap" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
+</head>
+<style>
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ html {
   scroll-behavior: smooth;
 }
 
-/* CSS Resets */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: #fe6600;
-}
-
-a:hover {
-  color: #ff7235;
-}
-
-body {
-  font-family: "roboto" ,sans-serif;
-}
-
-nav {
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.5rem 3.5rem;
-  background-color: var(--bg-color);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-}
-
-nav img {
-  width:8rem ;
-}
-
-nav a {
-  color: #fe6600;
-  transition: 0.3s;
-}
-nav a:hover {
-  color: #ff7235;
-  border-bottom: 2px solid #ff7235;
-}
-
-nav ul {
-  display: flex;
-  gap: 1.9rem;
-}
-
-nav ul li {
-  font-weight: 700;
-}
-
-.hamburger div{
-    width: 30px;
-    height: 3px;
-    background: #fe6600;
-    margin: 5px;
-    transition: all 0.3s ease;
-
-}
-
-.hamburger{
-    display: none;
-}
-
 
 .banner{
     position: relative;
@@ -116,15 +43,15 @@ nav ul li {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.1);
 }
 .banner .content{
     max-width: 900;
     text-align: center;
 }
 
-.banner .content{
-    font-size: 3em;
+.banner .content h2{
+    font-size: 5em;
     color: #072f5f;
 }
 
@@ -140,14 +67,14 @@ nav ul li {
     flex: 1 1 30rem;
 }
 .about .image img{
-    width: 50%;
+    width: 90%;
 }
 .about .content {
     flex: 1 1 40rem;
 }
 
 .about .content h3{
-    font-size: 3rem;
+    font-size: 4rem;
     color: white;
 }
 .about .content{
@@ -155,7 +82,7 @@ nav ul li {
     padding: 0.1rem 0;
     line-height: 2;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
 }
 
 
@@ -170,56 +97,27 @@ nav ul li {
     flex: 1 1 30rem;
 }
 .vision .image img{
-    width: 50%;
+    width: 70%;
 }
 .vision .content {
     flex: 1 1 40rem;
 }
 
 .vision .content h3{
-    font-size: 3rem;
-    color: white;
+    font-size: 4rem;
+    color: #fe6600;
 }
-.vision .content{
+.vision .content {
 
     padding: 0.1rem 0;
     line-height: 2;
     color: black;
-    font-size: 1.2rem;
+    font-size: 2.2rem;
+    padding-left:46px;
 }
 
 
 
-.ban{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background: url(people.jpg);
-    background-size: cover;
-  }
-
-
-.bio {
-  width: 25rem;
-  padding: 0.625rem;
-  border-radius: 6px;
-  box-shadow: 0px 2px 15px 2px #8b8eaf;
-  background-color: #fe6600;
-  color: white;
-  padding-left: 16px;
-}
-.bio h2 {
-  margin-bottom: 0.5rem;
-  font-size: 40px;
-}
-
-.bio p {
-  line-height: 1.7rem;
-  padding: 0.3rem 0;
-  font-size: 16px;
-}
 
 .button {
   border-radius: 4px;
@@ -227,9 +125,9 @@ nav ul li {
   border: none;
   color: #fe6600;
   text-align: center;
-  font-size: 15px;
-  padding: 20px;
-  width: 150px;
+  font-size: 17px;
+  padding: 15px;
+  width: 170px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -299,113 +197,377 @@ nav ul li {
   right: 0;
 }
 
-@media screen and (max-width: 800px){
-    nav{
-        position: fixed;
-        z-index: 2;
-    }
-    .hamburger{
-        display:block;
-        position: absolute;
-        cursor: pointer;
-        right: 5%;
-        top: 50%;
-        transform: translate(-5%, -50%);
-        z-index: 2;
-        transition: all 0.7s ease;
-        color: #fe6600;
+.ban{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background: url(people.jpg);
+    background-size: cover;
 
+  }
+
+  .container {
+  max-width: 500px;
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px
+  } 
+
+  .bio {
+  padding: 2rem;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px 2px #8b8eaf;
+  background-color: #fe6600;
+  color: white;
+}
+
+
+.bio h2 {
+  margin-bottom: 0.5rem;
+  font-size: 40px;
+}
+
+.bio p {
+  line-height: 1.7rem;
+  padding: 0.3rem 0;
+  font-size: 16px;
+}
+
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.row {margin: 0 -5px;}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+.card {
+  padding: 16px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+section {
+    text-align: justify;
+    padding: 0 2em 2em;
+}
+
+
+
+
+footer {
+    background-color: #fe6600;
+    padding: 3em 4em 2em;
+}
+
+
+    footer .row {
+        margin: 2em 0;
+        font-family: lato;
+        color: #fff;
+        position: relative;
+        border-bottom: 1px solid #cecece;
+    }
+    
+    .footer-toggle {
+        display: none;
+    }
+
+    .link-cat {
+        cursor:pointer;
+    }
+    
+    footer ul {
+        padding:0;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;        
+    }
+
+        footer ul li {
+            list-style-type: none;
+            padding:0;            
+            -webkit-transition: all .5s ease-in-out;            
+            transition: all .5s ease-in-out;
+            line-height: 2;            
+        }  
+
+       
+
+        .footer-cat-links a {
+            color: #cecece;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .footer-cat-links.active > li a {
+            pointer-events: auto;
+        }
+
+        .footer-cat-links a:after {
+            top: 21px;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            width: 0;
+            background: #fff;
+            
+            -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        }
+
+        .footer-cat-links a:hover:after, .footer-cat-links a:focus:after {
+            width: 100%;
+            left: 0;
+        }
+
+       
+
+       
+    .col-3 {
+        display: inline-table;
+        width:25%;
+    }
+
+    .col-3#newsletter {
+        width:24%
+    }
+
+   }
+
+    .social-links {
+        bottom: 44px;
+        position: absolute;
+        right: 0;
+    }
+    
+        .social-links a {
+            color: #fff;
+            font-size: 20px;
+            border: 1px solid;
+            border-radius: 20px;
+            padding: 6px;
+
+            -webkit-transition:all .2s ease-in;
+            transition:all .2s ease-in;
+        }
+
+        .social-links a:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        .social-links a:hover, .social-links a:focus {
+            background-color: #fe6600;
+        }
+
+            .social-links a i {
+                width: 25px;
+                height: 25px;
+                text-align:center;
+            }
+
+            #newsletter #address li:not(:first-child) {
+                padding: 20px 0;
+            }
         
+                #newsletter #address li i {
+                    font-size: 45px;
+                    width: auto;
+                    padding: 5px;
+                }
+
+                    #newsletter #address li div {
+                        color: #cecece;
+                        font-size: 14px;
+                        width: 80%;
+                        text-align: left;
+                        float: right;
+                        line-height: 1.3;
+                    }
+
+    #copyright {
+        text-align: center;
+        color:#fff;
+        font-family: lato;
     }
-    .navigation{
-        background: #3895d3;
-        position: fixed;
-        opacity: 1;
-        height: 100vh;
+
+
+@media only screen and (max-width : 1024px) {    
+
+    .col-3 {
+        display: block;
         width: 100%;
-        flex-direction: column;
-        clip-path: circle(50px at 90% -20%);
-        -webkit-clip-path: circle(50px at 90% -10%);
-        transition: all 1s ease-out;
-        pointer-events: none;
+        padding-bottom: 1em;
+        position: relative;
     }
-    .navigation.open{
-        clip-path: circle(1000px at 90% -10%);
-        -webkit-clip-path: circle(1000px at 90% -10%);
-        pointer-events: all;
+
+      
+        
+    footer .footer-cat {
+        margin-left: 25px;
     }
-    .navigation li{
+     
+    .footer-toggle,.footer-toggle::after {
+        background: #fff;
+        height: 2px;
+        width: 15px;
+        position: absolute;
+        display: block;
+        -webkit-transition:all .4s ease-in;
+        transition:all .4s ease-in;
+    }
+
+    .footer-toggle {        
+        top: 11px;
+        cursor:pointer;
+    }
+
+    .footer-toggle::after {
+        content: '';
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    .btnActive .footer-toggle::after {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    .footer-cat-links {
+        margin: 0 0em 0px 1.6em;
+    }
+
+        .footer-cat-links a {
+            pointer-events: none;
+        }
+    
+    .footer-cat-links li {
+        line-height: 0;
         opacity: 0;
     }
-    .navigation li:nth-child(1){
-        transition: all 0.5s ease 0.2s;
-    }
-    .navigation li:nth-child(2){
-        transition: all 0.5s ease 0.4s;
-    }
-    .navigation li:nth-child(3){
-        transition: all 0.5s ease 0.6s;
-    }
-    .navigation li:nth-child(4){
-        transition: all 0.5s ease 0.7s;
-    }
-    .navigation li:nth-child(5){
-        transition: all 0.5s ease 0.8s;
-    }
-    .navigation li:nth-child(6){
-        transition: all 0.5s ease 0.9s;
-        margin: 0;
-    }
-    .navigation li:nth-child(7){
-        transition: all 0.5s ease 1s;
-        margin: 0;
+
+    .footer-cat-links.active > li{
+        line-height:2;
+        opacity:1;
     }
 
-    li.fade{
-        opacity: 1;
+    .social-1 {
+        display: none !important;
     }
 
+   
 
-        .toggle .bars1{
-            transform: rotate(-45deg) translate(-5px, 6px);
-        }
-
-        .toggle .bars2{
-            transition: all 0s ease;
-            width: 0;
-        }
-
-        .toggle .bars3{
-            transform: rotate(45deg) translate(-5px, -6px);
-        }
-
-        .banner .content{
-    font-size: 2em;
-    color: #072f5f;
+   
 }
 
 
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+    
+    footer {
+        padding-right:3em;
+        padding-left:3em;
+    }
+
+    .col-3 {
+        display: block;
+        width: 100%;
+        padding-bottom: 1em;
+    }
 }
-  </style>
 
-  <body>
-     <nav>
-      <img src="global.png">
-      <div class="hamburger">
-            <div class="bars1"></div>
-            <div class="bars2"></div>
-            <div class="bars3"></div>
-        </div>
-      <ul class="navigation">
-         <li><a href="#">Home</a></li>
-      <li><a href="#">Choose Totors</a></li>
-      <li><a href="#">Group Classes</a></li>
-      <li><a href="#">Courses</a></li>
-      <li><a href="#">Login</a></li>
-      <li><a href="#">Signup</a></li>
-</nav>
+ 
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {  
+    
+    section {
+        padding-bottom: 3em;
+    }
 
-    <!-- Hero Section -->
+    .sec-heading {
+        padding:1em 0;
+    }
+    
+    .col-3 {
+        display: block;
+        width: 100%;
+        padding-bottom: 1em;
+    }
+}
+
+
+@media only screen and (max-width : 600px) {  
+    
+    .col-3 {
+        display: block;
+        width: 100%;
+        padding-bottom: 1em;
+    }
+
+    .col-6 {
+        width: 100%;
+        display: inline-flex;
+    }
+    
+    footer {
+        padding: 3em 2em 2em;
+    }
+}
+
+@media only screen and (max-width : 480px) {  
+
+    .col-6 {
+        width: 100%;
+        display: block;
+    }
+    
+    footer {
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+}
+</style>
+<body> 
+
+
+
+
+
+
+
+
+
+
 <section class="banner">
     <div class="content">
         <h2>Enrich,Explore,Discover</h2>
@@ -418,7 +580,7 @@ nav ul li {
 </div>
 <div class="content">
     <h3>ABOUT US</h3>
-    <p>iGlobal Class is an education provider agent with global recognition and reputation.We provide help and assistance to student/learners in order to improve their acedemic excellence through e-learning and home teaching. We believe that education is a fundamental right and everyone should hane access to quality higher education and career development.</p>
+    <p>iGlobal Class is an education provider agent with global recognition and reputation.We provide help and assistance to student/learners in order to improve their acedemic excellence through e-learning and home teaching. We believe that education is a fundamental right and everyone should hane access to quality higher education and career development. With this view in mind, we strive to create opportunities for those who have genuine aspiration and honest intention, who seek excellent quality in tuition and student services. We work in the best interest of both student and teachers to ensure that academic performance achieved for everyone. </p>
    <button class="button"><span>Read More </span></button>
 
 </div>
@@ -427,7 +589,7 @@ nav ul li {
  
 <section class="vision" >
 <div class="content">
-    <h3 style="color: #fe6600">OUR VISION</h3>
+    <h3>OUR VISION</h3>
     <p>To make learning simple to the world.</p>
     <button class="button1"><span>Learn More </span></button>
 
@@ -440,8 +602,8 @@ nav ul li {
 
 
 <section class="ban">
-    <div class="cont">
-        <div class="bio animate__animated animate__shakeX">
+    <div class="container">
+        <div class="bio">
         <h2 class="bio-title">Our Mission</h2>
         <p class="bio-text">
           To provide genuine education through the use of internet and technology for quality,fast,and best delivery services both e-learning and home teaching setup.
@@ -452,21 +614,114 @@ nav ul li {
 
 
 
-<script>
+<section>
+ <div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>START YOUR SEARCH</h3>
+      <i class='fa fa-search' style='font-size:48px;color:#fe6600'></i>
+      <p>Search for online tutoring.Need help with your search? Request a tutor and we'll have tutors contact you very soon!</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>REVIEW</h3>
+      <i class="fas fa-cogs overview-icon"></i>
+      <p>Read feedback and ratings from parents and students.Detailed tutor profiles also include photos more.</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>SCHEDULE</h3>
+      <i class="fas fa-cogs overview-icon"></i>
+      <p>Communication directly with tutors to find a time that works for you. Whether you need a single lesson.</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>START LEARNING</h3>
+      <i class="fas fa-cogs overview-icon"></i>
+      <p>One-one-one instruction is the most effective way to learn.Let us handle payments and administrative details</p>
+    </div>
+  </div>
+</div>
+</section>
 
 
-</script>
 
 
-    <script src="assets/js/app.js"></script>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+
+
+
+
+<footer>
+      
+       <div class="row">
+            <div class="col-3">                
+                <div class="link-cat">
+                    <span class="footer-toggle"></span>
+                </div>
+                <p class="footer-cat-links">
+                    iGlobalClass-practise makes <br>
+                    progress. find top rated<br>
+                    instructors guide you in <br>
+                    every step of your journey. <br>
+                    Try a free lesson today. <br>
+                    Tutors are waiting for you
+                </p>
+                <button class="button"><span>Register</span></button>
+            </div>
+            <div class="col-3">
+                <div class="link-cat">
+                    <span class="footer-toggle"></span>
+      
+                </div>
+                <ul class="footer-cat-links">
+                    <li><a href=""><span>Resources</span></a></li>
+                    <li><a href=""><span>Group Classes</span></a></li>
+                    <li><a href=""><span>Categories</span></a></li>
+                    <li><a href=""><span>Subject</span></a></li>
+                    <li><a href=""><span>Find tutors</span></a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <div class="link-cat">
+                    <span class="footer-toggle"></span>
+                </div>
+                <ul class="footer-cat-links">
+                  <li><a href=""><span>About company</span></a></li>
+                  <li><a href=""><span>How it works</span></a></li>
+                  <li><a href=""><span>Teach with us</span></a></li>
+                  <li><a href=""><span>FAQs</span></a></li>
+                  <li><a href=""><span>Terms & Condition</span></a></li>
+                  <li><a href=""><span>Refund policy</span></a></li>
+                  <li><a href=""><span>Privacy policy</span></a></li>
+                  <li><a href=""><span>About us</span></a></li>
+                </ul>
+            </div>
+            <div class="col-3" id="newsletter">
+                <b><span>Contact Us</span></b>
+                <p>Emails:<b><span>sales@iglobalclass.co.tz</span></b></p>
+                <p>Emails:<b><span>+255-766 592917</span></b></p>
+                <b><span>Terms of service -privacy policy</span></b>
+            <br>
+            <br>
+            <div class="social-links social-1 col-6">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+
+            </div>
+       </div></div>
+       <div id="copyright">
+           &copy; All Rights Reserved 2022
+       </div>
+    </footer>
+
+</body>
 </html>
