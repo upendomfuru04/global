@@ -27,6 +27,136 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  color: #000;
+}
+
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+  color: #fe6600;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo img {
+  width:8rem ;
+}
+
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #fe6600;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #fe6600;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 350px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+
+}
+
 .banner{
     position: relative;
     width: 100%;
@@ -544,6 +674,7 @@ footer {
         width: 100%;
         padding-bottom: 1em;
     }
+    
 }
 
  
@@ -562,6 +693,7 @@ footer {
         width: 100%;
         padding-bottom: 1em;
     }
+
 }
 
 
@@ -581,6 +713,10 @@ footer {
     footer {
         padding: 3em 2em 2em;
     }
+    .banner .content h2{
+    font-size: 3em;
+    color: #072f5f;
+}
 }
 
 @media only screen and (max-width : 480px) {  
@@ -598,8 +734,19 @@ footer {
 </style>
 <body> 
 
-
-
+<header class="header">
+  <a href="" class="logo"><img src="global.png"></a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+     <li><a href="#index.html">Home</a></li>
+      <li><a href="#tutor.html">Choose Tutors</a></li>
+      <li><a href="#class.html">Group Classes</a></li>
+      <li><a href="#Course.html">Courses</a></li>
+      <li><a href="#login.html">Login</a></li>
+      <li><a href="Signup.html">Signup</a></li>
+  </ul>
+</header>
 
 
 
@@ -672,7 +819,7 @@ footer {
   <div class="column">
     <div class="card">
       <h3>REVIEW</h3>
-      <i class="fas fa-cogs overview-icon"></i>
+      <i class="fa-light fa-message-lines"></i>
       <p>Read feedback and ratings from parents and students.Detailed tutor profiles also include photos more.</p>
     </div>
   </div>
@@ -814,6 +961,10 @@ h1 em {
     margin: 20px 0 10px 0;
     width: calc(100% / 2 - 10px);
   }
+   .banner .content h2{
+    font-size: 3.5em;
+    color: #072f5f;
+}
 }
 @media (max-width: 600px) {
   .main-card .cards .card{
