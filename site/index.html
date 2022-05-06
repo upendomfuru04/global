@@ -29,13 +29,15 @@ body {
 
 
 
-
 .header {
   background-color: #fff;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
   width: 100%;
-  z-index: 3;
+  z-index: 1;
+  padding: 1.5rem 3.5rem;
+  top: 0;
+  left: 0;
 }
 
 .header ul {
@@ -49,19 +51,20 @@ body {
 .header li a {
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
   text-decoration: none;
   color: #fe6600;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
+  background-color: #fe6600;
+  color: white;
 }
 
 .header .logo img {
-  width:10rem ;
+  width:7.5em;
+
 }
 
 
@@ -116,7 +119,7 @@ body {
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 350px;
+  max-height: 400px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -440,6 +443,58 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.div-box {
+    border-radius: 20px;
+    margin: 20px 0px;
+    background-color: #ffffff;
+    padding-top: 20px;
+    box-shadow: 8px 8px 0px 0px #adadad;
+}
+.User-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+}
+.User-img img{
+  width: 200%;
+}
+.User-name {
+    text-align: center;
+    font-size: 22px;
+    margin: 15px 0px 10px;
+    color: #fe6600;
+}
+
+.profile-details ul{
+  padding-left: 10px;
+}
+.profile-details ul li{
+  list-style: none;
+}
+.profile-details ul li a {
+    color: #fe6600;
+    text-decoration: none;
+    padding: 12px 15px;
+    display: block;
+    border-left: 3px solid transparent;
+    transition: 0.4s;
+}
+.profile-details ul li:last-child a {
+  border-bottom: none;
+  border-bottom-right-radius: 20px;
+}
+.profile-details ul li a:hover {
+    color: white;
+    background-color: #fe6600;
+    border-left: 3px solid #1261a0;
+}
+.profile-details ul li a i {
+    margin-right: 8px;
 }
 
 
@@ -784,7 +839,70 @@ footer {
     <img src="vision.png">
 </div>
 </section>
+<section style="background-color: #fe6600">
+  <br>
+  <div class="nine">
+  <h1 style="color: white">our popular courses
+  </h1>
+</div>
+<div  class="container">
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <div class="div-box">
+        <div class="User-img">
+          <img src="science.jpg">
+        </div>
+        <h3 class="User-name">SCIENCE SUBJECT</h3>
+        <div class="profile-details">
+          <ul>
+            <li><a href="#"> 1.Chemistry</a></li>
+            <li><a href="#">2.User Info</a></li>
+            <li><a href="#">3. Tasks</a></li>
+            <li><center> <a href="#"> +</a></center></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
+    <div class="col-sm-6 col-md-4">
+      <div class="div-box">
+        <div class="User-img">
+          <img src="life.jpg">
+        </div>
+        <h3 class="User-name">LIFE SKILLS</h3>
+      
+        <div class="profile-details">
+          <ul>
+            <li><a href="#"> 1.Public Speaking</a></li>
+            <li><a href="#">2.Personal Development</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><center> <a href="#"> +</a></center></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="div-box">
+        <div class="User-img">
+          <img src="busness.jpg">
+        </div>
+        <h3 class="User-name">BUSINESS</h3>
+       
+        <div class="profile-details">
+          <ul>
+            <li><a href="#"> 1.Event planning management</a></li>
+            <li><a href="#">2.Digital Marketing</a></li>
+            <li><a href="#">3.Branding</a></li>
+            <li><center> <a href="#"> +</a></center></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
 
 <section class="ban">
     <div class="container">
