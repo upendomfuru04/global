@@ -21,6 +21,138 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding: 1.5rem 3.5rem;
+  top: 0;
+  left: 0;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: #fe6600;
+  font-size: 20px;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #fe6600;
+  color: white;
+}
+
+.header .logo img {
+  width:7.5em;
+
+}
+
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #fe6600;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #fe6600;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 400px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+
+}
+
+
 .btn a:link, .btn a:visited {
   background-color: white;
   color: black;
@@ -149,226 +281,171 @@ h1 span{
     margin-top: 50px;
     margin-bottom: 50px;
   }
+}
  
-}
-
-
-
-section {
-    text-align: justify;
-    padding: 0 2em 2em;
-}
-
-
-
-
-footer {
+.footer_area {
+    position: relative;
+    z-index: 1;
     background-color: #fe6600;
-    padding: 3em 4em 2em;
+    overflow: hidden;
+webkit-box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
+    box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
+    padding:60px;
+}
+.footer_area .row {
+    margin-left: -25px;
+    margin-right: -25px;
+}
+.footer_area .row .col,
+.footer_area .row .col-1,
+.footer_area .row .col-10,
+.footer_area .row .col-11,
+.footer_area .row .col-12,
+.footer_area .row .col-2,
+.footer_area .row .col-3,
+.footer_area .row .col-4,
+.footer_area .row .col-5,
+.footer_area .row .col-6,
+.footer_area .row .col-7,
+.footer_area .row .col-8,
+.footer_area .row .col-9,
+.footer_area .row .col-auto,
+.footer_area .row .col-lg,
+.footer_area .row .col-lg-1,
+.footer_area .row .col-lg-10,
+.footer_area .row .col-lg-11,
+.footer_area .row .col-lg-12,
+.footer_area .row .col-lg-2,
+.footer_area .row .col-lg-3,
+.footer_area .row .col-lg-4,
+.footer_area .row .col-lg-5,
+.footer_area .row .col-lg-6,
+.footer_area .row .col-lg-7,
+.footer_area .row .col-lg-8,
+.footer_area .row .col-lg-9,
+.footer_area .row .col-lg-auto,
+.footer_area .row .col-md,
+.footer_area .row .col-md-1,
+.footer_area .row .col-md-10,
+.footer_area .row .col-md-11,
+.footer_area .row .col-md-12,
+.footer_area .row .col-md-2,
+.footer_area .row .col-md-3,
+.footer_area .row .col-md-4,
+.footer_area .row .col-md-5,
+.footer_area .row .col-md-6,
+.footer_area .row .col-md-7,
+.footer_area .row .col-md-8,
+.footer_area .row .col-md-9,
+.footer_area .row .col-md-auto,
+.footer_area .row .col-sm,
+.footer_area .row .col-sm-1,
+.footer_area .row .col-sm-10,
+.footer_area .row .col-sm-11,
+.footer_area .row .col-sm-12,
+.footer_area .row .col-sm-2,
+.footer_area .row .col-sm-3,
+.footer_area .row .col-sm-4,
+.footer_area .row .col-sm-5,
+.footer_area .row .col-sm-6,
+.footer_area .row .col-sm-7,
+.footer_area .row .col-sm-8,
+.footer_area .row .col-sm-9,
+.footer_area .row .col-sm-auto,
+.footer_area .row .col-xl,
+.footer_area .row .col-xl-1,
+.footer_area .row .col-xl-10,
+.footer_area .row .col-xl-11,
+.footer_area .row .col-xl-12,
+.footer_area .row .col-xl-2,
+.footer_area .row .col-xl-3,
+.footer_area .row .col-xl-4,
+.footer_area .row .col-xl-5,
+.footer_area .row .col-xl-6,
+.footer_area .row .col-xl-7,
+.footer_area .row .col-xl-8,
+.footer_area .row .col-xl-9,
+.footer_area .row .col-xl-auto {
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
+.single-footer-widget {
+    position: relative;
+    z-index: 1;
+}
 
-    footer .row {
-        margin: 2em 0;
-        font-family: lato;
-        color: #fff;
-        position: relative;
-        border-bottom: 1px solid #cecece;
+.single-footer-widget .footer_menu li a {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    display: block;
+    font-size: 1.5rem;
+}
+.single-footer-widget .footer_menu li a:hover,
+.single-footer-widget .footer_menu li a:focus {
+    color: #3f43fd;
+}
+.single-footer-widget .footer_menu li:last-child a {
+    margin-bottom: 0;
+}
+
+.footer_social_area {
+    position: relative;
+    z-index: 1;
+}
+.footer_social_area a {
+    border-radius: 50%;
+    height: 40px;
+    text-align: center;
+    width: 40px;
+    display: inline-block;
+    background-color: #f5f5ff;
+    line-height: 40px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-right: 10px;
+}
+.footer_social_area a i {
+    line-height: 36px;
+    color: #fe6600;
+}
+.footer_social_area a:hover,
+.footer_social_area a:focus {
+    color: #ffffff;
+}
+
+@-webkit-keyframes bi-cycle {
+    0% {
+        left: 0;
     }
-    
-    .footer-toggle {
-        display: none;
+    100% {
+        left: 100%;
     }
+}
 
-    .link-cat {
-        cursor:pointer;
+@keyframes bi-cycle {
+    0% {
+        left: 0;
     }
-    
-    footer ul {
-        padding:0;
-        -webkit-transition: all .3s ease-in-out;
-        transition: all .3s ease-in-out;        
+    100% {
+        left: 100%;
     }
+}
+ol li, ul li {
+    list-style: none;
+}
 
-        footer ul li {
-            list-style-type: none;
-            padding:0;            
-            -webkit-transition: all .5s ease-in-out;            
-            transition: all .5s ease-in-out;
-            line-height: 2;            
-        }  
-
-       
-
-        .footer-cat-links a {
-            color: #cecece;
-            text-decoration: none;
-            position: relative;
-        }
-
-        .footer-cat-links.active > li a {
-            pointer-events: auto;
-        }
-
-        .footer-cat-links a:after {
-            top: 21px;
-            content: "";
-            display: block;
-            height: 2px;
-            left: 50%;
-            position: absolute;
-            width: 0;
-            background: #fff;
-            
-            -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
-            transition: width 0.3s ease 0s, left 0.3s ease 0s;
-        }
-
-        .footer-cat-links a:hover:after, .footer-cat-links a:focus:after {
-            width: 100%;
-            left: 0;
-        }
-
-       
-
-       
-    .col-3 {
-        display: inline-table;
-        width:25%;
-    }
-
-    .col-3#newsletter {
-        width:24%
-    }
-
-   }
-
-    .social-links {
-        bottom: 44px;
-        position: absolute;
-        right: 0;
-    }
-    
-        .social-links a {
-            color: #fff;
-            font-size: 20px;
-            border: 1px solid;
-            border-radius: 20px;
-            padding: 6px;
-
-            -webkit-transition:all .2s ease-in;
-            transition:all .2s ease-in;
-        }
-
-        .social-links a:not(:last-child) {
-            margin-right: 10px;
-        }
-
-        .social-links a:hover, .social-links a:focus {
-            background-color: #fe6600;
-        }
-
-            .social-links a i {
-                width: 25px;
-                height: 25px;
-                text-align:center;
-            }
-
-            #newsletter #address li:not(:first-child) {
-                padding: 20px 0;
-            }
-        
-                #newsletter #address li i {
-                    font-size: 45px;
-                    width: auto;
-                    padding: 5px;
-                }
-
-                    #newsletter #address li div {
-                        color: #cecece;
-                        font-size: 14px;
-                        width: 80%;
-                        text-align: left;
-                        float: right;
-                        line-height: 1.3;
-                    }
-
-    #copyright {
-        text-align: center;
-        color:#fff;
-        font-family: lato;
-    }
-
-
-@media only screen and (max-width : 1024px) {    
-
-    .col-3 {
-        display: block;
-        width: 100%;
-        padding-bottom: 1em;
-        position: relative;
-    }
-
-      
-        
-    footer .footer-cat {
-        margin-left: 25px;
-    }
-     
-    .footer-toggle,.footer-toggle::after {
-        background: #fff;
-        height: 2px;
-        width: 15px;
-        position: absolute;
-        display: block;
-        -webkit-transition:all .4s ease-in;
-        transition:all .4s ease-in;
-    }
-
-    .footer-toggle {        
-        top: 11px;
-        cursor:pointer;
-    }
-
-    .footer-toggle::after {
-        content: '';
-        -webkit-transform: rotate(90deg);
-                transform: rotate(90deg);
-    }
-
-    .btnActive .footer-toggle::after {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-    }
-
-    .footer-cat-links {
-        margin: 0 0em 0px 1.6em;
-    }
-
-        .footer-cat-links a {
-            pointer-events: none;
-        }
-    
-    .footer-cat-links li {
-        line-height: 0;
-        opacity: 0;
-    }
-
-    .footer-cat-links.active > li{
-        line-height:2;
-        opacity:1;
-    }
-
-    .social-1 {
-        display: none !important;
-    }
-
+ol, ul {
+    margin: 0;
+    padding: 0;
+}
    
 
    
 }
 
-.button {
+
+.btn {
   border-radius: 4px;
   background-color: #ffffff;
   border: none;
@@ -382,14 +459,14 @@ footer {
   margin: 5px;
 }
 
-.button span {
+.btn span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.button span:after {
+.btn span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -398,69 +475,49 @@ footer {
   transition: 0.5s;
 }
 
-.button:hover span {
+.btn:hover span {
   padding-right: 25px;
 }
 
-.button:hover span:after {
+.btn:hover span:after {
   opacity: 1;
   right: 0;
 }
 
-.search-container{
-  width: 890px;
-  display: block;
-  margin: 0 auto;
-}
 
-input#search-bar{
-  margin: 0 auto;
-  width: 100%;
-  height: 45px;
-  padding: 0 20px;
-  font-size: 1rem;
-  border: 1px solid #D0CFCE;
-  outline: none;
-}
-
-  input#search-bar:focus{
-    border: 1px solid #008ABF;
-    transition: 0.35s ease;
-    color: #008ABF;
-    -webkit-input-placeholder{
-      transition: opacity 0.45s ease; 
-      opacity: 0;
-     }
-
-
-.search-icon{
-  position: relative;
-  float: left;
-  width: 75px;
-  height: 75px;
-  top: -62px;
-  left: -10px;
-  border: 0;
-  outline: none;
-  color:#fe6600;
-}
-
+  #copyright {
+        text-align: center;
+        color:#fff;
+        font-family: lato;
+    }
 
 
 </style>
 <body>
+
+
+
+<header class="header">
+  <a href="" class="logo"><img src="global.png"></a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+     <li><a href="index.html">Home</a></li>
+      <li><a href="tutor.html">Choose Tutors</a></li>
+      <li><a href="clss.html">Group Classes</a></li>
+      <li><a href="Course.html">Courses</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Signup</a></li>
+  </ul>
+</header>
+
+
 
 <section>
     <div class="container">
     	<div class="row">
     	 <h1 class="text-center"><span>Step into the Classroom...
 Anytime. Anywhere.</span></h1>
-
-<form class="search-container">
-   
-     <input type="text" id="search-bar" placeholder="">
-<i class="ion-ios-search search__icon"></i>
-  </form>
 
     		
     		<div class="col-md-4">
@@ -889,41 +946,54 @@ Anytime. Anywhere.</span></h1>
 
 </section>
 
-<footer>
-      
-       <div class="row">
-            <div class="col-3">                
-                <div class="link-cat">
-                    <span class="footer-toggle"></span>
-                </div>
-                <p class="footer-cat-links">
-                    iGlobalClass-practise makes <br>
-                    progress. find top rated<br>
-                    instructors guide you in <br>
-                    every step of your journey. <br>
-                    Try a free lesson today. <br>
-                    Tutors are waiting for you
-                </p>
-                <button class="button"><span>Register</span></button>
+
+
+
+
+
+<footer class="footer_area section_padding_130_0">
+      <div class="container">
+        <div class="row">
+          <!-- Single Widget-->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Footer Logo-->
+              <div class="footer-logo mb-3"></div>
+              <p style="color: #ffffff;
+              font-size: 19px;">iGlobalClass-practise makes 
+                    progress. find top rated
+                    instructors guide you in 
+                    every step of your journey. 
+                    Try a free lesson today. 
+                    Tutors are waiting for you</p>
+              <!-- Copywrite Text-->
+           
+
+                <button style="background-color: #ffffff; color: #fe6600; width: 150px;" class="btn"><span>Register</span></button>
+          
+              <!-- Footer Social Area-->
+             
             </div>
-            <div class="col-3">
-                <div class="link-cat">
-                    <span class="footer-toggle"></span>
-      
-                </div>
-                <ul class="footer-cat-links">
-                    <li><a href=""><span>Resources</span></a></li>
+          </div>
+          <!-- Single Widget-->
+          <div class="col-12 col-sm-6 col-lg">
+            <div class="single-footer-widget section_padding_0_130">
+              <div class="footer_menu">
+                <ul>
+                  <li><a href=""><span>Resources</span></a></li>
                     <li><a href=""><span>Group Classes</span></a></li>
                     <li><a href=""><span>Categories</span></a></li>
                     <li><a href=""><span>Subject</span></a></li>
                     <li><a href=""><span>Find tutors</span></a></li>
                 </ul>
+              </div>
             </div>
-            <div class="col-3">
-                <div class="link-cat">
-                    <span class="footer-toggle"></span>
-                </div>
-                <ul class="footer-cat-links">
+          </div>
+          <!-- Single Widget-->
+          <div class="col-12 col-sm-6 col-lg">
+            <div class="single-footer-widget section_padding_0_130">
+              <div class="footer_menu">
+                <ul>
                   <li><a href=""><span>About company</span></a></li>
                   <li><a href=""><span>How it works</span></a></li>
                   <li><a href=""><span>Teach with us</span></a></li>
@@ -933,25 +1003,61 @@ Anytime. Anywhere.</span></h1>
                   <li><a href=""><span>Privacy policy</span></a></li>
                   <li><a href=""><span>About us</span></a></li>
                 </ul>
+              </div>
             </div>
-            <div class="col-3" id="newsletter">
-                <b><span>Contact Us</span></b>
-                <p>Emails:<b><span>sales@iglobalclass.co.tz</span></b></p>
-                <p>Emails:<b><span>+255-766 592917</span></b></p>
-                <b><span>Terms of service -privacy policy</span></b>
-            <br>
-            <br>
-            <div class="social-links social-1 col-6">
+          </div>
+          <!-- Single Widget-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single-footer-widget section_padding_0_130">
+              <!-- Footer Menu-->
+              <div class="footer_menu">
+                <ul>
+                  <li><a href="#"><b><span>Contact Us</span></b></a></li>
+                  <li><a href="#">Emails:<b><span>sales@iglobalclass.co.tz</span></b></a></li>
+                  <li><a href="#">Emails:<b><span>+255-766 592917</span></b></a></li>
+                  <li><a href="#">Terms of service -privacy policy</a></li>
+                </ul>
+              </div>
+              <br>
+              <br>
+               <div class="footer_social_area">
                 <a href=""><i class="fab fa-facebook-f"></i></a>
                 <a href=""><i class="fab fa-instagram"></i></a>
                 <a href=""><i class="fab fa-linkedin-in"></i></a>
                 <a href=""><i class="fab fa-twitter"></i></a>
-
+              </div>
             </div>
-       </div></div>
-       <div id="copyright">
+          </div>
+        </div>
+      </div>
+      <br>
+      <hr>
+      <div id="copyright">
            &copy; All Rights Reserved 2022
        </div>
     </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
