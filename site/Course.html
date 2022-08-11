@@ -513,6 +513,38 @@ ol, ul {
     }
 
 
+    form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 95%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 5%;
+  padding: 10px;
+  background: #fe6600;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #fe6600;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
 </style>
 <body>
 
@@ -534,22 +566,29 @@ ol, ul {
 
 
 
+
+
 <section>
     <div class="container">
     	<br>
       <br>
         <div class="nine">
-  <h1>Step into the Classroom...
-Anytime. Anywhere.
+  <h1>Learn on your schedule...<br>Anytime. Anywhere.
   </h1>
-
-  <p>Get instant access to learning in countless subjects. With hundreds of live streaming lessons available 24/7.</p>
+  <p>Study any webinar, anytime. Explore thousands of courses.
+</p>
+  <p>Transform your life through education.
+</p>
 </div>
+<form class="example" action="/action_page.php">
+  <input type="text" placeholder="Search here.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
     		<div class="row">
     		<div class="col-md-4">
     		    <div class="card profile-card-2">
                     <div class="card-img-block">
-                        <img class="img-fluid" src="class.jpg">
+                        <img class="img-fluid" src="h.png">
                     </div>
                     <div class="card-body pt-5">
                         <img src="cll.png" alt="profile-image" class="profile"/>
@@ -561,7 +600,9 @@ Anytime. Anywhere.
                     <span class="fa fa-star checked"></span> 5(1)</div>
                         <h5 class="card-title">Jonas Hump</h5>
                        
-                       
+                        <div class="btn" style="padding-right: -12px;">
+        <a href="" class=" btn-sm">Dance</a>
+      </div>
                        <h4>Do you want to be an AWS Certified Developer Associate? This...</h4>
                         <p class="card-text text-muted">AZ-900 certification is a must to kick start your ...</p>
                         <hr>
