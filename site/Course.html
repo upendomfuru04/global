@@ -544,6 +544,39 @@ form.example::after {
   display: table;
 }
 
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-container > div {
+  width: 130px;
+  margin: 20px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+ padding: 0 7em 0 3em;
+}
+
+
+select {
+  appearance: none;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  width: 12em;
+  height: 4em;
+  padding: 0 4em 0 1em;
+  color: black;
+  border-radius: 0.25em;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+  option {
+    color: inherit;
+  }
+
+
 
 </style>
 <body>
@@ -580,6 +613,56 @@ form.example::after {
   <p>Transform your life through education.
 </p>
 </div>
+<div class="flex-container">
+  <div class="select">
+  <select>
+    <option value="1">Grades</option>
+    <option value="2">Grade 1</option>
+    <option value="3">Grade 2</option>
+        <option value="2">Grade 3</option>
+    <option value="3">Grade 4</option>
+        <option value="2">Grade 5</option>
+    <option value="3">Grade 6</option>
+        <option value="2">Grade 7</option>
+    <option value="3">Grade 8</option>
+  </select>
+</div>
+  <div><div class="select">
+  <select>
+    <option value="1">Categoris</option>
+    <option value="2">Music</option>
+    <option value="3">Dance</option>
+        <option value="2">Teaching</option>
+    <option value="3">Yoga</option>
+        <option value="2">Fitness</option>
+    <option value="3">Health</option>
+        <option value="2">It fitness</option>
+    <option value="3">Disgn</option>
+  </select>
+</div></div>
+  <div><div class="select">
+  <select>
+    <option value="1">Subjects</option>
+    <option value="2">None</option>
+  </select>
+</div></div>  
+  <div><div class="select">
+  <select>
+    <option value="1">Topics</option>
+    <option value="2">None</option>
+  </select>
+</div></div>
+<div><div class="select">
+  <select>
+    <option value="1">Price</option>
+    <option value="2">Low to High</option>
+    <option value="3">High to Low</option>
+  </select>
+</div></div>
+</div>
+
+
+
 <form class="example" action="/action_page.php">
   <input type="text" placeholder="Search here.." name="search">
   <button type="submit"><i class="fa fa-search"></i></button>
@@ -600,7 +683,7 @@ form.example::after {
                     <span class="fa fa-star checked"></span> 5(1)</div>
                         <h5 class="card-title">Jonas Hump</h5>
                        
-                        <div class="btn" style="padding-right: -12px;">
+                        <div class="btn">
         <a href="" class=" btn-sm">Dance</a>
       </div>
                        <h4>Do you want to be an AWS Certified Developer Associate? This...</h4>
@@ -627,7 +710,9 @@ form.example::after {
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span> 5(1)</div>
                         <h5 class="card-title">Jonas Hump</h5>
-                       
+                        <div class="btn">
+        <a href="" class=" btn-sm">Dance</a>
+      </div>
                        
                        <h4>Do you want to be an AWS Certified Developer Associate? This...</h4>
                         <p class="card-text text-muted">AZ-900 certification is a must to kick start your ...</p>
@@ -641,9 +726,9 @@ form.example::after {
                 
     		</div>
     		<div class="col-md-4">
-    		    <div class="card profile-card-2">
+            <div class="card profile-card-2">
                     <div class="card-img-block">
-                        <img class="img-fluid" src="class.jpg">
+                        <img class="img-fluid" src="h.png">
                     </div>
                     <div class="card-body pt-5">
                         <img src="cll.png" alt="profile-image" class="profile"/>
@@ -655,142 +740,9 @@ form.example::after {
                     <span class="fa fa-star checked"></span> 5(1)</div>
                         <h5 class="card-title">Jonas Hump</h5>
                        
-                       
-                       <h4>Do you want to be an AWS Certified Developer Associate? This...</h4>
-                        <p class="card-text text-muted">AZ-900 certification is a must to kick start your ...</p>
-                        <hr>
-                         <div class="btn">
-        <a href="" class=" btn-sm">Book Now</a>
-        <a href="" class=" btn-sm">$90</a>
+                        <div class="btn">
+        <a href="" class=" btn-sm">Dance</a>
       </div>
-                    </div>
-                </div>
-                
-    		</div>
-    		<div class="col-md-4">
-    		    <div class="card profile-card-2">
-                    <div class="card-img-block">
-                        <img class="img-fluid" src="class.jpg">
-                    </div>
-                    <div class="card-body pt-5">
-                        <img src="cll.png" alt="profile-image" class="profile"/>
-                        <div class="star">
-                    <span class="fa fa-star checked"></span>
-                     <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span> 5(1)</div>
-                        <h5 class="card-title">Jonas Hump</h5>
-                       
-                       
-                       <h4>Do you want to be an AWS Certified Developer Associate? This...</h4>
-                        <p class="card-text text-muted">AZ-900 certification is a must to kick start your ...</p>
-                        <hr>
-                         <div class="btn">
-        <a href="" class=" btn-sm">Book Now</a>
-        <a href="" class=" btn-sm">$90</a>
-      </div>
-                    </div>
-                </div>
-                
-    		</div>
-    		<div class="col-md-4">
-    		    <div class="card profile-card-2">
-                    <div class="card-img-block">
-                        <img class="img-fluid" src="class.jpg">
-                    </div>
-                    <div class="card-body pt-5">
-                        <img src="cll.png" alt="profile-image" class="profile"/>
-                        <div class="star">
-                    <span class="fa fa-star checked"></span>
-                     <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span> 5(1)</div>
-                        <h5 class="card-title">Jonas Hump</h5>
-                       
-                       
-                       <h4>Do you want to be an AWS Certified Developer Associate? This...</h4>
-                        <p class="card-text text-muted">AZ-900 certification is a must to kick start your ...</p>
-                        <hr>
-                         <div class="btn">
-        <a href="" class=" btn-sm">Book Now</a>
-        <a href="" class=" btn-sm">$90</a>
-      </div>
-                    </div>
-                </div>
-                
-    		</div>
-    		<div class="col-md-4">
-    		    <div class="card profile-card-2">
-                    <div class="card-img-block">
-                        <img class="img-fluid" src="class.jpg">
-                    </div>
-                    <div class="card-body pt-5">
-                        <img src="cll.png" alt="profile-image" class="profile"/>
-                        <div class="star">
-                    <span class="fa fa-star checked"></span>
-                     <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span> 5(1)</div>
-                        <h5 class="card-title">Jonas Hump</h5>
-                       
-                       
-                       <h4>Do you want to be an AWS Certified Developer Associate? This...</h4>
-                        <p class="card-text text-muted">AZ-900 certification is a must to kick start your ...</p>
-                        <hr>
-                         <div class="btn">
-        <a href="" class=" btn-sm">Book Now</a>
-        <a href="" class=" btn-sm">$90</a>
-      </div>
-                    </div>
-                </div>
-                
-    		</div>
-    		<div class="col-md-4">
-    		    <div class="card profile-card-2">
-                    <div class="card-img-block">
-                        <img class="img-fluid" src="class.jpg">
-                    </div>
-                    <div class="card-body pt-5">
-                        <img src="cll.png" alt="profile-image" class="profile"/>
-                        <div class="star">
-                    <span class="fa fa-star checked"></span>
-                     <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span> 5(1)</div>
-                        <h5 class="card-title">Jonas Hump</h5>
-                       
-                       
-                       <h4>Do you want to be an AWS Certified Developer Associate? This...</h4>
-                        <p class="card-text text-muted">AZ-900 certification is a must to kick start your ...</p>
-                        <hr>
-                         <div class="btn">
-        <a href="" class=" btn-sm">Book Now</a>
-        <a href="" class=" btn-sm">$90</a>
-      </div>
-                    </div>
-                </div>
-                
-    		</div>
-    		<div class="col-md-4">
-    		    <div class="card profile-card-2">
-                    <div class="card-img-block">
-                        <img class="img-fluid" src="class.jpg">
-                    </div>
-                    <div class="card-body pt-5">
-                        <img src="cll.png" alt="profile-image" class="profile"/>
-                        <div class="star">
-                    <span class="fa fa-star checked"></span>
-                     <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span> 5(1)</div>
-                        <h5 class="card-title">Jonas Hump</h5>
-                       
-                       
                        <h4>Do you want to be an AWS Certified Developer Associate? This...</h4>
                         <p class="card-text text-muted">AZ-900 certification is a must to kick start your ...</p>
                         <hr>
@@ -800,10 +752,9 @@ form.example::after {
       </div>
                     </div>
                 </div>
-                
-    		</div>
-    		    	<div class="col-md-4">
-    		    <div class="card profile-card-2">
+        </div>
+        <div class="col-md-4">
+            <div class="card profile-card-2">
                     <div class="card-img-block">
                         <img class="img-fluid" src="class.jpg">
                     </div>
@@ -816,7 +767,9 @@ form.example::after {
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span> 5(1)</div>
                         <h5 class="card-title">Jonas Hump</h5>
-                       
+                        <div class="btn">
+        <a href="" class=" btn-sm">Dance</a>
+      </div>
                        
                        <h4>Do you want to be an AWS Certified Developer Associate? This...</h4>
                         <p class="card-text text-muted">AZ-900 certification is a must to kick start your ...</p>
@@ -828,11 +781,11 @@ form.example::after {
                     </div>
                 </div>
                 
-    		</div>
-    		<div class="col-md-4">
-    		    <div class="card profile-card-2">
+        </div>
+        <div class="col-md-4">
+            <div class="card profile-card-2">
                     <div class="card-img-block">
-                        <img class="img-fluid" src="class.jpg">
+                        <img class="img-fluid" src="h.png">
                     </div>
                     <div class="card-body pt-5">
                         <img src="cll.png" alt="profile-image" class="profile"/>
@@ -844,7 +797,9 @@ form.example::after {
                     <span class="fa fa-star checked"></span> 5(1)</div>
                         <h5 class="card-title">Jonas Hump</h5>
                        
-                       
+                        <div class="btn">
+        <a href="" class=" btn-sm">Dance</a>
+      </div>
                        <h4>Do you want to be an AWS Certified Developer Associate? This...</h4>
                         <p class="card-text text-muted">AZ-900 certification is a must to kick start your ...</p>
                         <hr>
@@ -854,10 +809,9 @@ form.example::after {
       </div>
                     </div>
                 </div>
-                
-    		</div>
-    		<div class="col-md-4">
-    		    <div class="card profile-card-2">
+        </div>
+        <div class="col-md-4">
+            <div class="card profile-card-2">
                     <div class="card-img-block">
                         <img class="img-fluid" src="class.jpg">
                     </div>
@@ -870,7 +824,9 @@ form.example::after {
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span> 5(1)</div>
                         <h5 class="card-title">Jonas Hump</h5>
-                       
+                        <div class="btn">
+        <a href="" class=" btn-sm">Dance</a>
+      </div>
                        
                        <h4>Do you want to be an AWS Certified Developer Associate? This...</h4>
                         <p class="card-text text-muted">AZ-900 certification is a must to kick start your ...</p>
@@ -882,11 +838,11 @@ form.example::after {
                     </div>
                 </div>
                 
-    		</div>
-    		<div class="col-md-4">
-    		    <div class="card profile-card-2">
+        </div>
+        <div class="col-md-4">
+            <div class="card profile-card-2">
                     <div class="card-img-block">
-                        <img class="img-fluid" src="class.jpg">
+                        <img class="img-fluid" src="h.png">
                     </div>
                     <div class="card-body pt-5">
                         <img src="cll.png" alt="profile-image" class="profile"/>
@@ -898,7 +854,9 @@ form.example::after {
                     <span class="fa fa-star checked"></span> 5(1)</div>
                         <h5 class="card-title">Jonas Hump</h5>
                        
-                       
+                        <div class="btn">
+        <a href="" class=" btn-sm">Dance</a>
+      </div>
                        <h4>Do you want to be an AWS Certified Developer Associate? This...</h4>
                         <p class="card-text text-muted">AZ-900 certification is a must to kick start your ...</p>
                         <hr>
@@ -908,15 +866,9 @@ form.example::after {
       </div>
                     </div>
                 </div>
-                
-    		</div>
-    		</div>
-    	</div>
-    		
-<br> <div class="container">
-    	<div class="row">
-    		<div class="col-md-4">
-    		    <div class="card profile-card-2">
+        </div>
+        <div class="col-md-4">
+            <div class="card profile-card-2">
                     <div class="card-img-block">
                         <img class="img-fluid" src="class.jpg">
                     </div>
@@ -929,34 +881,9 @@ form.example::after {
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span> 5(1)</div>
                         <h5 class="card-title">Jonas Hump</h5>
-                       
-                       
-                       <h4>Do you want to be an AWS Certified Developer Associate? This...</h4>
-                        <p class="card-text text-muted">AZ-900 certification is a must to kick start your ...</p>
-                        <hr>
                         <div class="btn">
-        <a href="" class=" btn-sm">Book Now</a>
-        <a href="" class=" btn-sm">$90</a>
+        <a href="" class=" btn-sm">Dance</a>
       </div>
-                    </div>
-                </div>
-                
-    		</div>
-    		<div class="col-md-4">
-    		    <div class="card profile-card-2">
-                    <div class="card-img-block">
-                        <img class="img-fluid" src="class.jpg">
-                    </div>
-                    <div class="card-body pt-5">
-                        <img src="cll.png" alt="profile-image" class="profile"/>
-                        <div class="star">
-                    <span class="fa fa-star checked"></span>
-                     <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span> 5(1)</div>
-                        <h5 class="card-title">Jonas Hump</h5>
-                       
                        
                        <h4>Do you want to be an AWS Certified Developer Associate? This...</h4>
                         <p class="card-text text-muted">AZ-900 certification is a must to kick start your ...</p>
@@ -968,7 +895,7 @@ form.example::after {
                     </div>
                 </div>
                 
-    		</div>
+        </div>
     		<div class="col-md-4">
     		    <div class="card profile-card-2">
                     <div class="card-img-block">
@@ -983,7 +910,9 @@ form.example::after {
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span> 5(1)</div>
                         <h5 class="card-title">Jonas Hump</h5>
-                       
+                       <div class="btn">
+        <a href="" class=" btn-sm">Dance</a>
+      </div>
                        
                        <h4>Do you want to be an AWS Certified Developer Associate? This...</h4>
                         <p class="card-text text-muted">AZ-900 certification is a must to kick start your ...</p>

@@ -725,20 +725,20 @@ form.example input[type=text] {
   padding: 10px;
   font-size: 17px;
   border: 1px solid grey;
-  float: left;
-  width: 80%;
+  float: right;
+  width: 95%;
   background: #f1f1f1;
 }
 
 form.example button {
-  float: left;
-  width: 20%;
+  float: right;
+  width: 5%;
   padding: 10px;
-  background: #2196F3;
+  background: #fe6600;
   color: white;
   font-size: 17px;
   border: 1px solid grey;
-  border-left: none;
+  border-right: none;
   cursor: pointer;
 }
 
@@ -856,6 +856,10 @@ form.example::after {
 <section class="banner">
     <div class="content">
         <h2>Enrich,Explore,Discover</h2>
+        <form class="example" action="/action_page.php">
+  <input type="text" placeholder="what would you like to learn?" name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
     </div>
 </div>
 </section>
